@@ -1,0 +1,99 @@
+{
+  "version": "0.1.0",
+  "sideEffects": true,
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@halka/react-medium-zoom",
+  "module": "dist/react-medium-zoom.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/react-medium-zoom.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-medium-zoom.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@size-limit/preset-small-lib": "^4.9.1",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/addons": "^6.1.11",
+    "@storybook/react": "^6.1.11",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "^8.2.2",
+    "husky": "^4.3.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-is": "^17.0.1",
+    "size-limit": "^4.9.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.0.3",
+    "typescript": "^4.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halka-org/react-medium-zoom.git"
+  },
+  "author": "Soumyajit Pathak <s.pathak5995@gmail.com>",
+  "contributors": [
+    "Sharad Chand <pepsighan@sharadchand.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "hooks",
+    "medium-image",
+    "react-medium-zoom",
+    "medium-zoom",
+    "image-component"
+  ],
+  "dependencies": {
+    "medium-zoom": "^1.0.6"
+  },
+  "description": "![Bundle Size](https://badgen.net/bundlephobia/minzip/@halka/react-medium-zoom) ![npm version](https://badgen.net/npm/v/@halka/react-medium-zoom) ![types](https://badgen.net/npm/types/@halka/react-medium-zoom) ![license](https://badgen.net/github/license/halka-org/react-medium-zoom)",
+  "bugs": {
+    "url": "https://github.com/halka-org/react-medium-zoom/issues"
+  },
+  "homepage": "https://github.com/halka-org/react-medium-zoom#readme",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  }
+}
