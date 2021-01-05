@@ -87,7 +87,7 @@
   "dependencies": {
     "medium-zoom": "^1.0.6"
   },
-  "description": "![Bundle Size](https://badgen.net/bundlephobia/minzip/@halka/react-medium-zoom) ![npm version](https://badgen.net/npm/v/@halka/react-medium-zoom) ![types](https://badgen.net/npm/types/@halka/react-medium-zoom) ![license](https://badgen.net/github/license/halka-org/react-medium-zoom)",
+  "description": "A thin wrapper on top of the amazing medium-zoom package to build great image display components in React.",
   "bugs": {
     "url": "https://github.com/halka-org/react-medium-zoom/issues"
   },
